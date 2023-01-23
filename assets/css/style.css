@@ -62,6 +62,9 @@
 
 .main_header {
     padding: 10px 0px;
+}
+
+.main_headerHome {
     background-color: var(--bgColor);
 }
 
@@ -455,6 +458,7 @@
     font-size: 24px;
     line-height: 28px;
     color: var(--heading);
+    font-weight: 600;
 }
 
 .admission_content_text {
@@ -855,4 +859,769 @@
     height: 73px;
     max-width: 100%;
     margin: 0px auto;
+}
+
+/* about banner */
+
+.about_banner {
+    padding: 30px 0px;
+}
+
+.about_banner_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: column-reverse;
+}
+
+.about_banner_content {
+    width: 100%;
+}
+
+.about_banner_thumb {
+    max-width: 572px;
+    width: 100%;
+}
+
+.about_banner_thumb img {
+    width: 100%;
+    display: block;
+}
+
+/* mentor title */
+
+.mentor_title {
+    max-width: 704px;
+    width: 100%;
+    margin: 0px auto 30px;
+    text-align: center;
+}
+
+.mentor_title_subheading {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--mainColor);
+    font-weight: 600;
+}
+
+.mentor_title_heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--heading);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mentor_title_text {
+    font-size: 17px;
+    color: var(--heading);
+    line-height: 24px;
+}
+
+.menotor_image {
+    height: 220px;
+}
+
+.menotor_image img {
+    height: 100%;
+}
+
+.about_overview {
+    background: var(--bgColor)
+}
+
+.about_overview_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.about_overview_item {
+    width: 274px;
+    height: 315px;
+    border-radius: 5px;
+    background: var(--globalColor);
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_overview_image {
+    height: 74px;
+}
+
+.about_overview_image img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.about_overview_count p {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--mainColor);
+    text-align: center;
+    margin: 10px 0px;
+    display: block;
+}
+
+.about_overview_count p span {
+    display: inline-block;
+}
+
+.about_overview_text {
+    font-size: 18px;
+    color: var(--heading);
+    line-height: 24px;
+    text-align: center;
+}
+
+/* activiets banner */
+
+.aativiteis_banner_content {
+    width: 100%;
+}
+
+.aativiteis_banner_thumb {
+    width: 100%;
+}
+
+.aativiteis_banner_thumb img {
+    width: 100%;
+    display: block;
+}
+
+/* our seminar */
+
+.our_seminar_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our_seminar_vedio {
+    width: 100%;
+    position: relative;
+}
+
+.our_seminar_content {
+    width: 100%;
+}
+
+.our_seminar_backImage {
+    width: 100%
+}
+
+.our_seminar_backImage img {
+    width: 100%;
+    display: block;
+}
+
+.details_banner_cardWrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.details_banner_card {
+    height: 133px;
+    width: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    background: var(--globalColor);
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.1);
+}
+
+.details_banner_cardcount,
+.details_banner_cardtext {
+    font-size: 18px;
+    color: var(--mainColor);
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.agreement_banner {
+    height: 80vh;
+    width: 100%;
+    background: url(../image/aggrementbanner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+}
+
+.agreement_banner_content {
+    padding: 36px 30px;
+    background: linear-gradient(#e26267 0%, rgba(230, 88, 94, 0.4) 100%);
+}
+
+.agreement_banner_text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--globalColor)
+}
+
+.agreement_school_title {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--heading);
+    margin-bottom: 20px;
+}
+
+.agreement_school_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.agreement_school_thumb img {
+    width: 100%;
+    display: block;
+}
+
+.agreement_school_name {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--heading);
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.all_course_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+
+
+.course_enrollBtn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--mainColor);
+    padding: 12px 23px;
+    border: 1px solid var(--mainColor);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: var(--transition);
+}
+
+.course_enrollBtn:hover {
+    color: var(--globalColor);
+    background: var(--mainColor);
+}
+
+/* coursepage */
+
+.coursePage_banner_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 40px;
+}
+
+.coursePage_banner_content,
+.coursePage_banner_thumb {
+    width: 100%;
+}
+
+.coursePage_banner_thumb {
+    max-width: 530px;
+}
+
+.coursePage_banner_thumb img {
+    width: 100%;
+    display: block;
+}
+
+.courseBtn {
+    padding: 14px 60px !important;
+}
+
+
+.coursepage_banner_title {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: var(--globalColor);
+    padding: 14px 35px;
+    background: rgb(224 47 54 / 20%);
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.courseBanner_btn_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+.outline_btn {
+    background: transparent;
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+}
+
+.Discount_course_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.Discount_course_item {
+    padding: 30px;
+    background: var(--globalColor);
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.discount_badge {
+    width: 110px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.discount_badge img {
+    width: 100%;
+    display: block;
+}
+
+.Discount_course_itemWRapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.Discount_course_image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.Discount_course_image img {
+    width: 100%;
+    display: block;
+}
+
+.Discount_courseItem_content {
+    width: 100%;
+}
+
+.disconut_cousreItem_title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+}
+
+.disconut_cousreItem_text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: var(--heading);
+    margin-bottom: 15px;
+}
+
+.fee_banner_list {
+    position: relative;
+}
+
+.fee_banner_list ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.fee_banner_list ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.fee_bannerList_text,
+.fee_bannerList_serial {
+    display: flex;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--mainColor);
+}
+
+.fee_bannerList_serial {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--mainColor);
+}
+
+.fee_banner_thumb {
+    max-width: 500px;
+}
+
+/* fee */
+
+.coursefee_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+}
+
+.coursefee_item {
+    padding: 45px 15px;
+    background: var(--globalColor);
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+}
+
+.coursefee_itemThumb {
+    height: 130px;
+    width: 145px;
+    border-radius: 5px;
+    border: 2px solid var(--mainColor);
+    display: grid;
+    place-content: center;
+    margin: 0px auto;
+}
+
+.coursefee_itemImage {
+    height: 65px;
+    width: 100%;
+}
+
+.coursefee_itemImage img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.coursefee_itemcontent {
+    margin-top: 10px;
+}
+
+.coursefee_item_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--mainColor);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.coursefee_item_price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--heading);
+}
+
+/* apllication form */
+
+.application_section {
+    background: linear-gradient(rgba(243, 171, 174, 0.28) 0%, #fde9e2 100%);
+
+}
+
+.form_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form_logo {
+    max-width: 100px;
+    width: 100%;
+}
+
+.form_logo a {
+    display: flex;
+    width: 100%;
+}
+
+/* form top */
+
+.form_top {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.main_title p {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+}
+
+.main_heading h1 {
+    padding: 18px 42px;
+    display: inline-block;
+    font-size: 26px;
+    color: #343131;
+    background: linear-gradient(rgba(230, 88, 94, 0.71) 0%, rgba(241, 127, 87, 0.23) 100%);
+}
+
+/* entry form */
+.studententry_form_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px 7%;
+    padding-bottom: 150px;
+}
+
+.studententry_form_left {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: transparent;
+}
+
+.studententry_input_inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+.studententry_input_inner label {
+    min-width: 230px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--heading);
+}
+
+.studententry_input_inner label sup {
+    color: red;
+}
+
+.studententry_input_inner input {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    color: var(--textColor);
+    border: 1px solid var(--mainColor);
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.studententry_form_thumbnail {
+    width: 110px;
+}
+
+.studententry_form_image {
+    width: 80%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.studententry_form_image img {
+    width: 100%;
+}
+
+.entry_upload_btn {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 30px;
+}
+
+.entry_upload_btn input {
+    appearance: none;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.entry_upload_btn label {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--mainColor);
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.addform_middTiele h2 {
+    color: var(--mainColor);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.entrySubmit_btn {
+    position: relative;
+}
+
+.entrySubmit_btn button {
+    display: inline-block;
+    padding: 16px 40px;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(230, 88, 94, 0.71) 0%, rgba(241, 127, 87, 0.23) 100%);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.about_course {
+    max-width: 450px;
+    width: 100%;
+}
+
+.about_cousre_title h3 {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    color: var(--mainColor);
+    margin-bottom: 30px;
+}
+
+.about_cousreList {
+    position: relative;
+}
+
+.about_cousreList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about_cousreList ul li {
+    font-size: 14px;
+    color: #707070;
+    line-height: 24px;
+}
+
+.payment_content_title {
+    margin-bottom: 40px;
+}
+
+.payment_content_title h3 {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.payment_wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.payment_item {
+    width: 100%;
+    display: block;
+    padding: 40px 20px;
+    background: #fde9e2;
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+}
+
+.payment_item_logo {
+    width: 155px;
+    margin: 0px auto 10px;
+}
+
+.payment_item_number p {
+    font-size: 18px;
+    text-align: center;
+    color: #343131;
+}
+
+.Transaction_input_inner {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.Transaction_input_inner label {
+    font-size: 16px;
+    color: var(--mainColor);
+    display: flex;
+}
+
+.Transaction_input_inner input {
+    background: #fde9e2;
+    border: 1px solid #4a853a;
+    outline: none;
+    height: 50px;
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    padding: 0px 20px;
+}
+
+.form_submitBtn {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
+.form_submitBtn button {
+    background-color: var(--mainColor);
+    padding: 15px 121px;
+    border: none;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 16px;
 }

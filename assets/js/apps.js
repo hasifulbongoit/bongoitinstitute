@@ -22,6 +22,21 @@ $(".video_popup_btn").magnificPopup({
   type: "iframe",
 });
 
+// stciky header
+
+{
+  let mainHeader = document.getElementById("myHeader");
+  let sticky = mainHeader.offsetTop;
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > sticky) {
+      mainHeader.classList.add("sticky");
+    } else {
+      mainHeader.classList.remove("sticky");
+    }
+  });
+}
+
 // slick slider
 
 $(".home_banner_slider").slick({

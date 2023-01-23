@@ -43,6 +43,54 @@
     .footer_item {
         width: calc(50% - 20px);
     }
+
+    .about_banner {
+        padding: 40px 0px;
+    }
+
+    .agreement_banner_content {
+        padding: 36px 40px;
+    }
+
+    .agreement_banner_text {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .agreement_school_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .courseBanner_btn_wrapper {
+        flex-direction: row;
+    }
+
+    .Discount_course_itemWRapper {
+        flex-direction: row;
+    }
+
+    .Discount_course_image {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .coursefee_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .studententry_form_thumbnail {
+        width: 150px;
+    }
+
+    .entry_upload_btn label {
+        font-size: 14px;
+    }
+
+    .form_logo {
+        max-width: 120px;
+    }
 }
 
 @media(min-width: 768px) {
@@ -178,6 +226,136 @@
         width: auto;
     }
 
+    .about_banner {
+        padding: 50px 0px;
+    }
+
+    .about_banner_wrapper {
+        flex-direction: row;
+    }
+
+    .about_banner_content {
+        max-width: 467px;
+    }
+
+    .our_seminar_wrapper {
+        flex-direction: row;
+    }
+
+    .our_seminar_vedio {
+        width: 49%;
+        position: relative;
+    }
+
+    .our_seminar_content {
+        width: 46%;
+    }
+
+    .agreement_banner_content {
+        padding: 36px 60px;
+    }
+
+    .agreement_banner_text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .agreement_school_wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .agreement_school_title {
+        font-size: 30px;
+    }
+
+    .agreement_school_name {
+        font-size: 16px;
+    }
+
+    .coursePage_banner_wrapper {
+        flex-direction: row;
+    }
+
+    .coursePage_banner_content,
+    .coursePage_banner_thumb {
+        max-width: 530px;
+    }
+
+    .courseBanner_btn_wrapper {
+        flex-direction: column;
+    }
+
+    .all_course_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Discount_course_image {
+        max-width: 330px;
+        width: 100%;
+    }
+
+    .coursefee_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .studententry_form_wrapper {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .about_cousre_title h3 {
+        font-size: 24px;
+    }
+
+    .about_cousreList ul li {
+        font-size: 16px;
+    }
+
+    .about_cousreList ul {
+        gap: 20px;
+    }
+
+    .studententry_input_inner label {
+        font-size: 20px;
+    }
+
+    .studententry_input_inner {
+        gap: 20px;
+    }
+
+    .addform_middTiele h2 {
+        font-size: 28px;
+    }
+
+    .payment_item {
+        padding: 77px 20px;
+    }
+
+    .payment_item {
+        width: calc(33.33% - 16px);
+    }
+
+    .payment_content_title h3 {
+        font-size: 22px;
+    }
+
+    .Transaction_input_inner label {
+        font-size: 22px;
+    }
+
+    .Transaction_input_inner input {
+        height: 80px;
+    }
+
+    .form_header {
+        justify-content: flex-end;
+    }
+
+    .main_heading h1 {
+        font-size: 30px;
+    }
+
 }
 
 @media(min-width: 1024px) {
@@ -256,13 +434,54 @@
         font-size: 18px;
     }
 
+    .about_banner {
+        padding: 60px 0px;
+    }
 
+    .agreement_school_wrapper {
+        gap: 24px;
+    }
+
+    .agreement_school_name {
+        font-size: 18px;
+    }
+
+    .all_course_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Discount_course_wrapper {
+        flex-direction: row;
+    }
+
+    .Discount_course_image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .coursefee_wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .studententry_input_inner {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .Transaction_input_inner {
+        flex-direction: row;
+    }
+
+    .form_submitBtn {
+        margin-top: 100px;
+    }
 
 }
 
 @media(min-width: 1200px) {
+
     .global_btn {
-        padding: 14px 31px;
+        padding: 12px 31px;
         font-size: 18px;
     }
 
@@ -304,4 +523,16 @@
         height: 270px;
     }
 
+    .about_banner {
+        padding: 80px 0px;
+    }
+
+    .courseBanner_btn_wrapper {
+        flex-direction: row;
+    }
+
+    .discount_badge {
+        top: -50px;
+        left: -50px;
+    }
 }

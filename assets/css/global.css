@@ -47,13 +47,14 @@ a {
 }
 
 .global_btn {
-    padding: 14px 25px;
+    padding: 12px 23px;
     background: var(--mainGradient);
     border-radius: 5px;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
     color: var(--globalColor);
+    border: 2px solid transparent;
 }
 
 .global_btn:hover {
@@ -192,4 +193,16 @@ a {
 
 .home_banner_slider.slick-dotted.slick-slider {
     margin-bottom: 0px;
+}
+
+/* sticky header */
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    background: var(--globalColor) !important;
+    box-shadow: 0 0px 10px rgb(0 0 0 / 20%) !important;
+    z-index: 999;
 }
