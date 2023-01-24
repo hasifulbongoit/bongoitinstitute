@@ -140,3 +140,8 @@ $(document).ready(function () {
     ],
   });
 });
+
+// gallery
+$(document).ready(function () {
+  $("#lightgallery").lightGallery();
+});

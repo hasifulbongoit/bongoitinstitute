@@ -75,9 +75,17 @@
     gap: 20px;
 }
 
+.sticky .header_logo {
+    display: none !important;
+}
+
 .header_logo {
     display: flex;
-    width: 80px;
+}
+
+.header_logo_image {
+    display: flex;
+    width: 60px;
 }
 
 .header_logo img {
@@ -111,6 +119,47 @@
 }
 
 .header_nav_link:hover {
+    color: var(--mainColor);
+}
+
+.header_nav_item:hover .sub_nav {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+.sub_nav {
+    position: absolute;
+    padding: 20px;
+    background-color: var(--globalColor);
+    min-width: 200px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    top: 98%;
+    left: 0px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease-in-out all;
+    z-index: 999;
+}
+
+.sub_nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub_nav ul li a {
+    font-size: 18px;
+    color: var(--textColor);
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    display: block;
+    transition: all ease-in-out 0.2s;
+}
+
+.sub_nav ul li a:hover {
     color: var(--mainColor);
 }
 
@@ -166,6 +215,21 @@
 
 .mobile_header_nav .header_nav_link {
     font-size: 18px;
+}
+
+.mobile_sub_nav {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.mobile_sub_nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile_sub_nav ul li a {
+    color: var(--heading);
 }
 
 
@@ -594,6 +658,12 @@
 .gallary_image {
     grid-row: span 1;
     grid-column: span 2;
+    display: flex;
+}
+
+.gallary_image a,
+.gallary_image3 a,
+.gallary_image6 a {
     display: flex;
 }
 
@@ -1400,13 +1470,17 @@
 }
 
 /* entry form */
+
+.payment_section {
+    background: var(--bgColor);
+}
+
 .studententry_form_wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
     gap: 50px 7%;
-    padding-bottom: 150px;
 }
 
 .studententry_form_left {
@@ -1572,6 +1646,20 @@
     padding: 40px 20px;
     background: #fde9e2;
     filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+    position: relative;
+}
+
+.payment_radioBtn {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.payment_radioBtn input {
+    width: 100%;
+    height: 100%;
 }
 
 .payment_item_logo {
@@ -1619,9 +1707,238 @@
 
 .form_submitBtn button {
     background-color: var(--mainColor);
-    padding: 15px 121px;
+    padding: 15px 85px;
     border: none;
     display: inline-block;
     color: #FFFFFF;
     font-size: 16px;
+}
+
+/* cousre page */
+
+.course_page {
+    position: relative;
+}
+
+.viewcousre_item {
+    background: var(--globalColor);
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+}
+
+.viewcousre_item_wraper {
+    padding: 20px 20px;
+}
+
+.viewcousre_itemdetails_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.viewcousre_itemdetails_item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+/* all title */
+.viewcousre_itemdetails_title,
+.viewcousre_contentText {
+    min-width: 140px;
+    font-size: 18px;
+    color: var(--heading);
+    font-weight: 600;
+    display: block;
+}
+
+.viewcousre_contentText {
+    font-weight: 400;
+    color: var(--textColor);
+}
+
+.viewcousre_item_text {
+    font-size: 16px;
+    color: var(--textColor);
+    line-height: 24px;
+}
+
+.viewcousre_item_video {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.viewcousre_item_image {
+    width: 100%;
+}
+
+.viewcousre_item_image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* verification page */
+
+.verification_page {
+    background: var(--bgColor);
+}
+
+.verification_pagetitle {
+    font-size: 30px;
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.verification_form_content {
+    padding: 50px 0px;
+}
+
+.verification_form {
+    max-width: 530px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.verification_formwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.verification_form_input label {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--mainColor);
+    display: block;
+    line-height: 30px;
+}
+
+.verification_form_input input {
+    width: 100%;
+    height: 54px;
+    border-radius: 5px;
+    background: #fce9ea;
+    border: 1px solid var(--mainColor);
+    display: block;
+    outline: none;
+    padding: 0px 15px;
+}
+
+.verification_formBtn {
+    margin: 0px !important;
+}
+
+.checkOut_btn_inner {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.checkOut_btn {
+    display: inline-block;
+    padding: 14px;
+    max-width: 300px;
+    width: 100%;
+    background: var(--mainColor);
+    color: var(--globalColor);
+    font-weight: 600;
+    text-align: center;
+}
+
+.checkOut_btn:hover {
+    color: var(--globalColor);
+}
+
+/* notice page */
+
+.notice_wrapper {
+    padding: 60px 0px;
+    background: url(../image/fee/noticebg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* contact page */
+
+.contact_page {
+    padding: 130px 0px;
+    background: var(--bgColor);
+}
+
+.contact_page_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: column-reverse;
+}
+
+.contact_form {
+    width: 100%;
+    background: var(--globalColor);
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px hsl(0deg 0% 0% / 10%);
+}
+
+.contact_thumb {
+    max-width: 700px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.contact_form_wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact_form_item {
+    width: 100%;
+}
+
+.contact_form_item label,
+.contact_form_item_texarea label {
+    font-size: 18px;
+    color: var(--heading);
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact_form_item input,
+.contact_form_item_texarea textarea {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(243 171 174 / 15%);
+    outline: none;
+    padding: 20px 15px;
+}
+
+.contact_form_item_texarea {
+    width: 100%;
+}
+
+.contact_form_item_texarea textarea {
+    height: 150px;
+}
+
+.contact_thumb img {
+    width: 100%;
+    display: block;
+}
+
+.contact_formBtn {
+    margin-top: 24px !important;
+    text-align: left !important;
+    padding-bottom: 0px !important;
 }
