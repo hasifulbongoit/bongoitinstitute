@@ -76,7 +76,7 @@
 }
 
 .sticky .header_logo {
-    display: none !important;
+    display: none;
 }
 
 .header_logo {
@@ -149,12 +149,18 @@
     gap: 10px;
 }
 
+.sub_nav ul li {
+    padding: 5px;
+    border-radius: 12px;
+    background: var(--bgColor);
+}
+
 .sub_nav ul li a {
     font-size: 18px;
     color: var(--textColor);
     font-weight: 500;
     line-height: 28px;
-    text-align: left;
+    text-align: center;
     display: block;
     transition: all ease-in-out 0.2s;
 }
@@ -237,6 +243,8 @@
 .banner_section {
     padding: 30px 0px;
     background-color: var(--bgColor);
+    position: relative;
+    overflow: hidden;
 }
 
 .home_banner_slider {
@@ -487,6 +495,7 @@
 
 .admission_section {
     background: var(--bgColor);
+    position: relative;
 }
 
 .admission_wrapper {
@@ -619,6 +628,8 @@
 .add_section {
     padding: 80px 0px;
     background: var(--bgColor);
+    position: relative;
+    overflow: hidden;
 }
 
 .add_section_content {
@@ -935,6 +946,7 @@
 
 .about_banner {
     padding: 30px 0px;
+    position: relative;
 }
 
 .about_banner_wrapper {
@@ -998,7 +1010,11 @@
 }
 
 .about_overview {
-    background: var(--bgColor)
+    background: url(../image/fee/overbg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .about_overview_wrapper {
@@ -1501,7 +1517,6 @@
     flex-direction: column;
 }
 
-
 .studententry_input_inner label {
     min-width: 230px;
     font-weight: 500;
@@ -1957,4 +1972,143 @@
     margin-top: 24px !important;
     text-align: left !important;
     padding-bottom: 0px !important;
+}
+
+/* all animation */
+
+.banner_shape1 {
+    animation: slide-top 5s linear infinite;
+    position: absolute;
+    display: none;
+}
+
+@keyframes slide-top {
+    0% {
+        top: 90%;
+        left: 5%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 5%;
+        opacity: 0;
+    }
+}
+
+
+.banner_shape2 {
+    animation: slide-right 8s linear infinite;
+    position: absolute;
+    display: none;
+}
+
+@keyframes slide-right {
+    0% {
+        top: 90%;
+        left: 90%;
+    }
+
+    25% {
+        top: 60%;
+        left: 90%;
+    }
+
+    50% {
+        top: 70%;
+        left: 80%;
+    }
+
+    75% {
+        top: 60%;
+        left: 80%;
+    }
+
+    100% {
+        top: 70%;
+        left: 90%;
+    }
+}
+
+.banner_shape3 {
+    animation: slide-rotate 4s linear infinite;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+@keyframes slide-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes slide-top {
+    0% {
+        top: 90%;
+        left: 5%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 5%;
+        opacity: 0;
+    }
+}
+
+.banner_shape6 {
+    animation: slide-rotate 4s linear infinite;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.banner_shape5 {
+    animation: slide-top2 4s linear infinite;
+    position: absolute;
+    display: none;
+}
+
+@keyframes slide-top2 {
+    0% {
+        top: 70%;
+        left: 5%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 5%;
+        opacity: 0;
+    }
+}
+
+.banner_shape7 {
+    animation: slide-right-top 5s linear infinite;
+    position: absolute;
+    display: none;
+}
+
+@keyframes slide-right-top {
+    0% {
+        top: 0px;
+        right: 5%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 90%;
+        right: 5%;
+        opacity: 1;
+    }
 }

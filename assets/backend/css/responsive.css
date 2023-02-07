@@ -1,0 +1,58 @@
+/* 540px */
+
+@media (min-width: 540px) {
+  .studententry_input_inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .studententry_input_inner input {
+    max-width: 350px;
+  }
+}
+
+/* 768 */
+
+@media (min-width: 768px) {
+  .page_title_text {
+    font-size: 30px;
+  }
+
+  .student_details_wrapper {
+    padding: 35px 40px;
+  }
+
+  .studententry_form_wrapper {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+}
+
+/* 1024 */
+
+@media (min-width: 1024px) {
+  .toggle_nav {
+    display: none;
+  }
+
+  .dashboard_sidebar {
+    left: 0px;
+  }
+
+  .dashboard_body {
+    margin-left: 265px;
+    width: calc(100% - 265px);
+  }
+
+  .dashboard_header {
+    justify-content: flex-end;
+  }
+
+}
+
+/* 1200 */
+
+@media (min-width: 1200px) {}
+
+@media(min-width: 1400px) {}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BongIt institue Admin </title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="../assets/backend/css/style.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/backend/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- main dashboard -->
+    <section class="dashboard">
+        <!-- wrapper -->
+        <div class="dashboard_wrapper">
+
+            <!-- sidebar -->
+            <div class="dashboard_sidebar" id="dashboard_sidebar">
+                <!-- content -->
+                <div class="sidebar_content">
+                    <!-- sidebar top -->
+                    <div class="sidebar_top">
+                        <!-- logo -->
+                        <a href="./index.html" class="sidebar_logo">
+                            <img src="assets/image/dashboardlogo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- sidebar nav -->
+                    <div class="sidebar_nav">
+                        <ul>
+                            <!-- item -->
+                            <li class="sidebar_nav_item active">
+                                <a href="./studentregistration.html" class="sidebar_navItem_inner">
+                                    <span class="sidebar_nav_text">অনলাইন রেজিস্টেশন</span>
+                                </a>
+                            </li>
+
+                            <!-- item -->
+                            <li class="sidebar_nav_item active">
+                                <a href="./studentapplication.html" class="sidebar_navItem_inner">
+                                    <span class="sidebar_nav_text">আবেদন ফর্ম</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- dashboard body -->
+            <div class="dashboard_body">
+
+                <!-- admin header -->
+                <div class="dashboard_header">
+
+                    <!-- dashboard toggole -->
+                    <div class="toggle_nav" id="dashboard_toggle">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- content -->
+                <div class="dashboard_body_content">
+                    <!-- btn -->
+                    <div class="addstudent_title">
+                        <p>রেজিস্ট্রেশন কৃত ছাত্র</p>
+                    </div>
+
+                    <div class="student_imformaion_table">
+                        <div class="admin_table_content">
+                            <table class="admin_table">
+                                <!-- thead -->
+                                <thead>
+                                    <tr>
+                                        <th>Application ID</th>
+                                        <th>Student Name</th>
+                                        <th>Mobile Number</th>
+                                        <th>Class</th>
+                                        <th>Roll</th>
+                                        <th>Address</th>
+                                        <th>Picture</th>
+                                        <th>School Name</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+
+                                <!-- tbody -->
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <div class="student_id">
+                                                <a href="">1205</a>
+                                            </div>
+                                        </td>
+                                        <td>Mr. Kamal Hasan</td>
+                                        <td>01725205874</td>
+                                        <td>Eight</td>
+                                        <td>5000</td>
+                                        <td>panchaghar,rangpur</td>
+                                        <td>
+                                            <div class="studentEntry_image">
+                                                <img src="../assets/image/gallery/img1.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>hemayetpur high School</td>
+                                        <td>
+                                            <!-- select status -->
+                                            <div class="entry_status">
+                                                <select>
+                                                    <option value="">Pending</option>
+                                                    <option value="">Approved</option>
+                                                    <option value="">Cancel</option>
+                                                    <option value="">Delete</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table_actionbtn_wrapper">
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn opacitMain">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="student_id">
+                                                <a href="">1205</a>
+                                            </div>
+                                        </td>
+                                        <td>Mr. Kamal Hasan</td>
+                                        <td>01725205874</td>
+                                        <td>Eight</td>
+                                        <td>5000</td>
+                                        <td>panchaghar,rangpur</td>
+                                        <td>
+                                            <div class="studentEntry_image">
+                                                <img src="../assets/image/gallery/img1.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>hemayetpur high School</td>
+                                        <td>
+                                            <!-- select status -->
+                                            <div class="entry_status">
+                                                <select>
+                                                    <option value="">Pending</option>
+                                                    <option value="">Approved</option>
+                                                    <option value="">Cancel</option>
+                                                    <option value="">Delete</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table_actionbtn_wrapper">
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn opacitMain">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="student_id">
+                                                <a href="">1205</a>
+                                            </div>
+                                        </td>
+                                        <td>Mr. Kamal Hasan</td>
+                                        <td>01725205874</td>
+                                        <td>Eight</td>
+                                        <td>5000</td>
+                                        <td>panchaghar,rangpur</td>
+                                        <td>
+                                            <div class="studentEntry_image">
+                                                <img src="../assets/image/gallery/img1.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>hemayetpur high School</td>
+                                        <td>
+                                            <!-- select status -->
+                                            <div class="entry_status">
+                                                <select>
+                                                    <option value="">Pending</option>
+                                                    <option value="">Approved</option>
+                                                    <option value="">Cancel</option>
+                                                    <option value="">Delete</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table_actionbtn_wrapper">
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn opacitMain">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="student_id">
+                                                <a href="">1205</a>
+                                            </div>
+                                        </td>
+                                        <td>Mr. Kamal Hasan</td>
+                                        <td>01725205874</td>
+                                        <td>Eight</td>
+                                        <td>5000</td>
+                                        <td>panchaghar,rangpur</td>
+                                        <td>
+                                            <div class="studentEntry_image">
+                                                <img src="../assets/image/gallery/img1.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>hemayetpur high School</td>
+                                        <td>
+                                            <!-- select status -->
+                                            <div class="entry_status">
+                                                <select>
+                                                    <option value="">Pending</option>
+                                                    <option value="">Approved</option>
+                                                    <option value="">Cancel</option>
+                                                    <option value="">Delete</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table_actionbtn_wrapper">
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn opacitMain">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="student_id">
+                                                <a href="">1205</a>
+                                            </div>
+                                        </td>
+                                        <td>Mr. Kamal Hasan</td>
+                                        <td>01725205874</td>
+                                        <td>Eight</td>
+                                        <td>5000</td>
+                                        <td>panchaghar,rangpur</td>
+                                        <td>
+                                            <div class="studentEntry_image">
+                                                <img src="../assets/image/gallery/img1.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>hemayetpur high School</td>
+                                        <td>
+                                            <!-- select status -->
+                                            <div class="entry_status">
+                                                <select>
+                                                    <option value="">Pending</option>
+                                                    <option value="">Approved</option>
+                                                    <option value="">Cancel</option>
+                                                    <option value="">Delete</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table_actionbtn_wrapper">
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn opacitMain">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="student_id">
+                                                <a href="">1205</a>
+                                            </div>
+                                        </td>
+                                        <td>Mr. Kamal Hasan</td>
+                                        <td>01725205874</td>
+                                        <td>Eight</td>
+                                        <td>5000</td>
+                                        <td>panchaghar,rangpur</td>
+                                        <td>
+                                            <div class="studentEntry_image">
+                                                <img src="../assets/image/gallery/img1.png" alt="">
+                                            </div>
+                                        </td>
+                                        <td>hemayetpur high School</td>
+                                        <td>
+                                            <!-- select status -->
+                                            <div class="entry_status">
+                                                <select>
+                                                    <option value="">Pending</option>
+                                                    <option value="">Approved</option>
+                                                    <option value="">Cancel</option>
+                                                    <option value="">Delete</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="table_actionbtn_wrapper">
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </button>
+                                                </div>
+
+                                                <!-- btn inner -->
+                                                <div class="table_action_btn">
+                                                    <button class="btn opacitMain">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- bootstrap cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery cdn -->
+    <!-- js link -->
+    <script src="../assets/backend/js/apps.js"></script>
+</body>
+
+</html>

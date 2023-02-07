@@ -1,0 +1,224 @@
+.dashboard {
+  position: relative;
+}
+
+.dashboard_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+=======================
+   sidebar starrt
+=======================
+*/
+
+.dashboard_sidebar {
+  position: fixed;
+  top: 0px;
+  left: -100%;
+  width: 265px;
+  height: 100vh;
+  background-color: var(--bgColor);
+  transition: var(--transition);
+  z-index: 999;
+}
+
+.dashboard_sidebar.activeSidebar {
+  left: 0px;
+}
+
+.sidebar_content {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.sidebar_top {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.sidebar_logo {
+  display: block;
+  width: 84px;
+  margin: 0px auto 10px;
+}
+
+.sidebar_logo img {
+  width: 100%;
+  display: block;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.sidebar_nav {
+  position: relative;
+}
+
+.sidebar_nav_item:hover {
+  background-color: #FFFF;
+}
+
+.sidebar_nav_item:hover .sidebar_nav_text {
+  color: var(--textColor);
+}
+
+.sidebar_navItem_inner {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.sidebar_nav_icon {
+  display: block;
+  width: 30px;
+}
+
+.sidebar_nav_text {
+  color: var(--heading);
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+  width: calc(100% - 31px);
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+/*
+=======================
+   dashboard body starrt
+=======================
+*/
+
+.dashboard_body {
+  margin-left: 0px;
+  width: 100%;
+  transition: var(--transition);
+  min-height: 100vh;
+}
+
+.dashboard_header {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dashboard_toggle {
+  display: block;
+}
+
+.dashboard_toggle ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dashboard_toggle ul li {
+  height: 2px;
+  width: 30px;
+  background-color: var(--textColor);
+}
+
+.dashboard_body_content {
+  padding: 20px 25px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.profile_name {
+  color: var(--mainColor);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile_image {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile_image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* admin table */
+
+.admin_table_content {
+  overflow-x: auto;
+  border-radius: 5px;
+  background: var(--globalColor);
+  box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  padding: 20px;
+}
+
+.admin_table {
+  min-width: 894px;
+  width: 100%;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+.admin_table tr th,
+.admin_table tr td {
+  padding: 15px 15px;
+  text-align: left;
+}
+
+.admin_table tr td {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--heading);
+}
+
+.admin_table tr th {
+  color: var(--mainColor);
+}
+
+.addstudent_title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.studentEntry_image {
+  width: 50px;
+}
+
+.studentEntry_image img {
+  width: 100%;
+}
+
+.table_actionbtn_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table_action_btn button {
+  height: 30px;
+  width: 30px;
+  border-radius: 8px;
+  background-color: rgb(52 168 83 / 15%);
+  display: grid;
+  place-content: center;
+  color: var(--heading);
+}

@@ -396,6 +396,15 @@
         width: calc(50% - 12px);
     }
 
+    .banner_shape1,
+    .banner_shape2,
+    .banner_shape3,
+    .banner_shape5,
+    .banner_shape6,
+    .banner_shape7 {
+        display: block;
+    }
+
 }
 
 @media(min-width: 1024px) {
@@ -541,6 +550,11 @@
     .contact_form_item {
         width: 100%;
     }
+
+    .sticky .header_logo {
+        display: block;
+    }
+
 
 }
 

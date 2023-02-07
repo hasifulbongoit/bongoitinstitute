@@ -46,7 +46,7 @@ $(".home_banner_slider").slick({
   arrows: false,
   fade: true,
   cssEase: "linear",
-  autoplay: true,
+  autoplay: false,
 });
 
 // our cousre
